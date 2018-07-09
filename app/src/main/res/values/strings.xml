@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Example Mvp</string>
+    <string name="title_plan_detail">Plan Detail</string>
+
+    <!-- Login -->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="button_login_with_email">Login with Email</string>
+
+    <!-- Errors -->
+    <string name="error_email_not_valid">Please enter valid email</string>
+    <string name="error_login_failed">Login failed</string>
+    <string name="error_loading_failed">Loading failed!</string>
+
+    <!-- PlanDetails List -->
+    <string name="title_plans">Plans</string>
+
+    <!-- PlanDetails Details -->
+    <string name="title_plan_details">Plan Details</string>
+
+
+</resources>

@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.example.mvp"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    def commonDependencies = rootProject.ext.commonDependencies
+
+    // Android
+    implementation commonDependencies.supportAppCompatV7
+    implementation commonDependencies.supportAnnotation
+    implementation commonDependencies.supportRecyclerView
+    implementation commonDependencies.constraintLayout
+    implementation commonDependencies.supportDesign
+    implementation commonDependencies.supportCardView
+
+    // Networking Retrofit
+    api commonDependencies.retrofit2
+    api commonDependencies.retrofitRxAdapter
+    api commonDependencies.retrofitConverter
+    api commonDependencies.okHttpInterceptor
+
+    implementation commonDependencies.dagger2Android
+    kapt commonDependencies.dagger2Compiler
+
+    // RxJava 2
+    api commonDependencies.rxJava2
+    api commonDependencies.rxAndroid
+
+    implementation commonDependencies.loggerTimber
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+}
+repositories {
+    mavenCentral()
+}
