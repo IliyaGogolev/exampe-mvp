@@ -8,8 +8,8 @@ This app has 3 screens and retreives data from mock API of apiary server:
 2. List of plans
 3. Plan Detials
 
-
-Project strucutre.
+<br/>
+<h4>Project strucutre</h4>  
 There're two main features "login" and "plan". Plan feature has two sub features "plans" and "plandetails"
 
 - features
