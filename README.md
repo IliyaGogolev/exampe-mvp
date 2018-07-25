@@ -29,4 +29,4 @@ There are three types of data objects
 * ViewData - data which used inside UI, used to encapsulated and seperate UI layer from domain 
 
 
-TODO: This is very basic sample app. A lot of improvements can be done by using architecture components and best practices (Lifecycle, LiveData, Paging, etc...) Everybody is welcome to contribute :)
+TODO: This is very basic sample app. A lot of improvements can be done by using architecture components and best practices (Lifecycle, LiveData, Paging, etc...)
